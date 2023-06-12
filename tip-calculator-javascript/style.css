@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1a1a1a;
+}
+.tip-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e6e6;
+    width: 50%;
+    padding: 2%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #cccccc;
+}
+.tip-container h1{
+    font-size: 50px;
+}
+.tip-container h1 , .tip-container h3 , .tip-container .tip-input , .tip-container .tip-button{
+    margin: 2%;
+}
+.tip-input{
+    height: 40px;
+    width: 60%;
+    padding: 2%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #cccccc;
+    border-style: none;
+}
+.tip-button{
+    height: 40px;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #cccccc;
+    background-color: #fff;
+    border-style: none;
+    cursor: pointer;
+}
+.tip-button:hover{
+    background-color: #1a1a1a;
+    color: #e6e6e6;
+}
+@media(max-width: 720px){
+    .tip-container h1{
+        font-size: 20px;
+    }
+    .tip-container h3{
+        font-size: 15px;
+    }
+    .tip-container .tip-input , .tip-container .tip-button{
+        width: 90%;
+    }
+}

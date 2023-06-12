@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Form</title>
+</head>
+<body>
+    <main>
+        <section>
+            <form action="" class="simple-form-container" onsubmit="">
+                <h1>Simple Form</h1>
+                <input type="text" id="simpleFormFirstName" placeholder="Enter First Name*" title="First Name" >
+                <input type="text" id="simpleFormMiddleName" placeholder="Enter Middle Name*" title="Middle Name">
+                <input type="text" id="simpleFormLastName" placeholder="Enter Last Name*" title="Last Name" >
+                <input type="email" id="simpleFormEmail" placeholder="Enter Email Address*" title="Email Address" >
+                <input type="password" id="simpleFormPassword" placeholder="Enter Password*" title="Password" pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$" oninvalid="validatePassword()" oninput="setCustomValidity('')" required>
+                <button type="submit" title="Submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <section class="tip-container">
+        <h1>Tip Calculator</h1>
+        <h3>How much was your overall expense?</h3>
+        <input type="number" class="tip-input" id="tipExpense" placeholder="Enter you expense">
+        <h3>How many percent of tip will you give?</h3>
+        <input type="number" class="tip-input" id="tipPercentage" placeholder="Enter tip percentage">
+        <button type="submit" class="tip-button" onclick="calculateTip()" id="tipCalculate">Calculate</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
