@@ -6,7 +6,7 @@
 }
 /* Body */
 html , body{
-    background: #000;
+    background: #004050;
     height: 100%;
     width: 100%;
     display: flex;
@@ -26,7 +26,7 @@ html , body{
 }
 /* H1 */
 .container h1{
-    color: green;
+    color: #004050;
     font-size: 50px;
 }
 /* Input */
@@ -37,9 +37,9 @@ html , body{
 .input-container .input-text{
     height: 50px;
     width: 85%;
-    border-top: solid 2px green;
-    border-left: solid 2px green;
-    border-bottom: solid 2px green;
+    border-top: solid 2px #004050;
+    border-left: solid 2px #004050;
+    border-bottom: solid 2px #004050;
     border-right: none;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -49,17 +49,17 @@ html , body{
     height: 50px;
     width: 15%;
     background: #fff;
-    color: green;
+    color: #004050;
     cursor: pointer;
-    border-top: solid 2px green;
-    border-right: solid 2px green;
-    border-bottom: solid 2px green;
+    border-top: solid 2px #004050;
+    border-right: solid 2px #004050;
+    border-bottom: solid 2px #004050;
     border-left: none;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 .input-container .button-submit:hover{
-    background: green;
+    background: #004050;
     color: #fff;
 }
 /* List */
@@ -76,25 +76,13 @@ html , body{
     list-style: none;
     border-radius: 10px;
     background: #fff;
-    color: green;
+    color: #004050;
     margin-bottom: 2%;
     position: relative;
 }
 .list-container ul li:hover{
     color: #fff;
-    background: green;
-}
-span{
-    position: absolute;
-    right: 0;
-    margin-right: 20px;
-    cursor: pointer;
-    padding: 0 5px;
-    border-radius: 2px;
-}
-span:hover{
-    background: #fff;
-    color: green;
+    background: #004050;
 }
 /* Footer */
 .footer-container{
@@ -104,23 +92,10 @@ span:hover{
     align-items: center;
     padding: 2%;
 }
-.footer-container p{
-    color: green;
-}
-.footer-container .button-clear{
-    height: 40px;
-    width: 60px;
-    background: #fff;
-    border: solid 2px green;
-    border-radius: 10px;
-    cursor: pointer;
-    color: green;
-}
-.footer-container .button-clear:hover{
-    color: #fff;
-    background-color: green;
-}
 @media(max-width: 720px){
+    .container{
+        width: 90%;
+    }
     .container h1{
         font-size: 30px;
     }
@@ -129,12 +104,12 @@ span:hover{
     }
     .input-container .input-text{
         width: 100%;
-        border: solid 2px green;
+        border: solid 2px #004050;
         border-radius: 10px;
     }
     .input-container .button-submit{
         width: 100%;
-        border: solid 2px green;
+        border: solid 2px #004050;
         border-radius: 10px;
     }
 }

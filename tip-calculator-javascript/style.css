@@ -6,7 +6,7 @@
 html , body{
     height: 100%;
     width: 100%;
-    background-color: #f2f2f2;
+    background-color: #004050;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +21,7 @@ html , body{
     width: 50%;
     padding: 2%;
     border-radius: 10px;
-    box-shadow: 10px 10px 10px #cccccc;
+    box-shadow: 10px 10px 100px;
 }
 .tip-container h1{
     font-size: 50px;
