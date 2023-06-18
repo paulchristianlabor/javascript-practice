@@ -10,6 +10,7 @@ html , body{
     height: 100%;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -28,69 +29,66 @@ html , body{
 .container h1{
     color: #004050;
     font-size: 50px;
+    margin: 1px 0;
 }
 /* Input */
-.input-container{
+.input-text{
+    height: 50px;
     width: 90%;
-    display: flex;
-}
-.input-container .input-text{
-    height: 50px;
-    width: 85%;
-    border-top: solid 2px #004050;
-    border-left: solid 2px #004050;
-    border-bottom: solid 2px #004050;
-    border-right: none;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border: solid 2px #004050;
+    border-radius: 10px;
     padding: 2%;
+    outline: none;
+    margin: 1px 0;
 }
-.input-container .button-submit{
+textarea{
+    height: 100px;
+    width: 90%;
+    border: solid 2px #004050;
+    border-radius: 10px;
+    padding: 2%;
+    outline: none;
+    margin: 1px 0;
+}
+.button-submit{
     height: 50px;
-    width: 15%;
-    background: #fff;
-    color: #004050;
-    cursor: pointer;
-    border-top: solid 2px #004050;
-    border-right: solid 2px #004050;
-    border-bottom: solid 2px #004050;
-    border-left: none;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-.input-container .button-submit:hover{
+    width: 90%;
     background: #004050;
     color: #fff;
+    cursor: pointer;
+    border: solid 2px #004050;
+    border-radius: 10px;
+    margin: 1px 0;
+}
+.button-submit:hover{
+    background: #fff;
+    color: #004050;
 }
 /* List */
 .list-container{
     width: 90%;
     margin-top: 2%;
 }
-.list-container ul{
-    max-height: 300px;
-    overflow-y: auto;
-}
-.list-container ul li{
-    padding: 2%;
-    list-style: none;
-    border-radius: 10px;
-    background: #fff;
+table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
     color: #004050;
-    margin-bottom: 2%;
-    position: relative;
 }
-.list-container ul li:hover{
-    color: #fff;
-    background: #004050;
+tr , th , td{
+    border: solid 2px #004050;
 }
-/* Footer */
-.footer-container{
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+th , td{
     padding: 2%;
+    min-width: 70px;
+}
+.fa-solid{
+    padding: 5px;
+    border-radius: 5px;
+}
+.fa-solid:hover{
+    background-color: #004050;
+    color: #fff;
 }
 @media(max-width: 720px){
     .container{
@@ -99,17 +97,19 @@ html , body{
     .container h1{
         font-size: 30px;
     }
-    .input-container{
-        flex-direction: column;
+    .input-text{
+        width: 100%;
     }
-    .input-container .input-text{
+    textarea{
+        width: 100%;
+    }
+    .button-submit{
         width: 100%;
         border: solid 2px #004050;
         border-radius: 10px;
     }
-    .input-container .button-submit{
+    .list-container{
         width: 100%;
-        border: solid 2px #004050;
-        border-radius: 10px;
+        margin-top: 2%;
     }
 }

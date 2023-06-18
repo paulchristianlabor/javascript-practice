@@ -11,14 +11,26 @@
 <body>
     <section class="container">
         <h1>To Do List</h1>
-        <div class="input-container">
-            <input type="text" id="toDoList" class="input-text" placeholder="Add To Do List">
-            <button class="button-submit" onclick="submit()">Submit</button>
-        </div>
+        <input type="text" id="toDoList" class="input-text" placeholder="Add To Do List Name">
+        <textarea id="" placeholder="Add To Do List Description"></textarea>
+        <button class="button-submit" onclick="submit()">Submit</button>
         <div class="list-container">
-            <ul id="ul">
-                
-            </ul>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Options</th>
+                </tr>
+                <tr>
+                    <td>Social Media</td>
+                    <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat corporis veniam inventore reiciendis labore accusamus sequi beatae a? Fugit cupiditate perferendis inventore placeat? Est ratione fuga ipsam minima molestiae nihil.</td>
+                    <td>
+                        <i class="fa-solid fa-check" title="Done"></i>
+                        <i class="fa-solid fa-pen-to-square" title="Edit"></i>
+                        <i class="fa-solid fa-xmark" title="Delete"></i>
+                    </td>
+                </tr>
+            </table>
         </div>
     </section>
 
