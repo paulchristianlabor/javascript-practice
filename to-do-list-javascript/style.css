@@ -24,6 +24,15 @@ html , body{
     align-items: center;
     border-radius: 10px;
     padding: 2%;
+    max-height: 90%;
+}
+.form-container{
+    background: #fff;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 /* H1 */
 .container h1{
@@ -68,12 +77,18 @@ textarea{
 .list-container{
     width: 90%;
     margin-top: 2%;
+    overflow: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 table{
-    width: 100%;
+    width: 90%;
     border-collapse: collapse;
     text-align: center;
     color: #004050;
+    display: block;
+    height: 100%;
 }
 tr , th , td{
     border: solid 2px #004050;
@@ -105,8 +120,6 @@ th , td{
     }
     .button-submit{
         width: 100%;
-        border: solid 2px #004050;
-        border-radius: 10px;
     }
     .list-container{
         width: 100%;
