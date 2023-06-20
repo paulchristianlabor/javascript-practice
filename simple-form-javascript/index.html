@@ -11,11 +11,18 @@
         <section>
             <form action="" class="simple-form-container" onsubmit="">
                 <h1>Simple Form</h1>
-                <input type="text" id="simpleFormFirstName" placeholder="Enter First Name*" title="First Name" >
-                <input type="text" id="simpleFormMiddleName" placeholder="Enter Middle Name*" title="Middle Name">
-                <input type="text" id="simpleFormLastName" placeholder="Enter Last Name*" title="Last Name" >
-                <input type="email" id="simpleFormEmail" placeholder="Enter Email Address*" title="Email Address" >
-                <input type="password" id="simpleFormPassword" placeholder="Enter Password*" title="Password" pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$" oninvalid="validatePassword()" oninput="setCustomValidity('')" required>
+                <input type="text" id="simpleFormFirstName" class="input-text" placeholder="Enter First Name*" title="First Name" >
+                <input type="text" id="simpleFormMiddleName" class="input-text" placeholder="Enter Middle Name*" title="Middle Name">
+                <input type="text" id="simpleFormLastName" class="input-text" placeholder="Enter Last Name*" title="Last Name" >
+                <div class="sex-container">
+                    <div class="gender-container">
+                        <label for="male">Male</label><input type="radio" class="input-sex" name="male" id="male">
+                    </div>
+                    <div class="gender-container">
+                        <label for="female">Female</label><input type="radio" class="input-sex" name="female" id="female">
+                    </div>
+                </div>
+                <input type="date" class="input-date">
                 <button type="submit" title="Submit">Submit</button>
             </form>
         </section>

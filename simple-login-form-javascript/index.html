@@ -3,9 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Form</title>
 </head>
 <body>
-    
+    <main>
+        <section>
+            <form action="" class="simple-form-container" onsubmit="">
+                <h1>Simple Form</h1>
+                <input type="email" id="simpleFormEmail" placeholder="Enter Email Address*" title="Email Address" required>
+                <input type="password" id="simpleFormPassword" placeholder="Enter Password*" title="Password" pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$" oninvalid="validatePassword()" oninput="setCustomValidity('')" required>
+                <button type="submit" title="Submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
