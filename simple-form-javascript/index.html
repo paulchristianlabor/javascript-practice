@@ -11,19 +11,22 @@
         <section>
             <form action="" class="simple-form-container" onsubmit="">
                 <h1>Simple Form</h1>
-                <input type="text" id="simpleFormFirstName" class="input-text" placeholder="Enter First Name*" title="First Name" >
+                <input type="text" id="simpleFormFirstName" class="input-text" placeholder="Enter First Name*" title="First Name">
                 <input type="text" id="simpleFormMiddleName" class="input-text" placeholder="Enter Middle Name*" title="Middle Name">
-                <input type="text" id="simpleFormLastName" class="input-text" placeholder="Enter Last Name*" title="Last Name" >
+                <input type="text" id="simpleFormLastName" class="input-text" placeholder="Enter Last Name*" title="Last Name">
                 <div class="sex-container">
                     <div class="gender-container">
-                        <label for="male">Male</label><input type="radio" class="input-sex" name="male" id="male">
+                        <label for="simpleFormMale">Male</label><input type="radio" class="input-sex" name="sex" id="simpleFormMale">
                     </div>
                     <div class="gender-container">
-                        <label for="female">Female</label><input type="radio" class="input-sex" name="female" id="female">
+                        <label for="simpleFormFemale">Female</label><input type="radio" class="input-sex" name="sex" id="simpleFormFemale">
                     </div>
                 </div>
-                <input type="date" class="input-date">
-                <button type="submit" title="Submit">Submit</button>
+                <input type="date" class="input-date" id="simpleFormDate">
+                <button type="submit" title="Submit" onclick="submitForm()">Submit</button>
+            
+
+            <p id="result"></p>
             </form>
         </section>
     </main>

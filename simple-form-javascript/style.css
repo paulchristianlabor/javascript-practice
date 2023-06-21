@@ -44,7 +44,7 @@ input::placeholder{
     align-items: center;
 }
 .gender-container{
-    width: 49%;
+    width: 30%;
     height: 50px;
     padding: 2%;
     margin-bottom: 10px;
@@ -58,7 +58,7 @@ label{
     margin-left: 10px;
 }
 .input-sex{
-    margin-left: 50px;
+    margin-left: 10px;
 }
 .input-date{
     width: 100%;
