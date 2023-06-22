@@ -5,7 +5,4 @@ function submitForm(){
     var simpleFormMale = document.getElementById("simpleFormMale").value
     var simpleFormFemale = document.getElementById("simpleFormFemale").value
     var simpleFormDate = document.getElementById("simpleFormDate").value
-    
-    alert(simpleFormFirstName)
-    document.getElementById("result").innerHTML = "Fuck You"
 }
