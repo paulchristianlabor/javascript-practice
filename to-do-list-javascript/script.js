@@ -1,7 +1,7 @@
 function submit(){
     let toDoList = document.getElementById('toDoList').value
 
-    if(toDoList === ""){
+    if(toDoListName === "" || toDoListDescription === ""){
         //Display error message
         alert("Please enter a value")
     }
