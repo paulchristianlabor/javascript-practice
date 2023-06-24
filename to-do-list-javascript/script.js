@@ -1,14 +1,16 @@
 function submit(){
-    let toDoList = document.getElementById('toDoList').value
+    let toDoListName = document.getElementById('toDoListName').value
+    let toDoListDescription = document.getElementById('toDoListDescription').value
 
-    if(toDoListName === "" || toDoListDescription === ""){
-        //Display error message
-        alert("Please enter a value")
-    }
-    else{
-        let list = document.createElement("li")
-        list.innerHTML = toDoList
-        document.getElementById("ul").appendChild(list)
-        alert("Task Submitted Succesfully")
-    }
+    let listName = document.createElement("td")
+    listName.innerHTML = toDoListName
+    document.getElementById('toDoListContainer').appendChild(listName)
+
+    let listDescription = document.createElement("td")
+    listDescription.innerHTML = toDoListDescription
+    document.getElementById('toDoListContainer').appendChild(listDescription)
+
+    let listOption = document.createElement("td")
+    listOption.innerHTML = '<i class="fa-solid fa-check" title="Done"></i><i class="fa-solid fa-pen-to-square" title="Edit"></i><i class="fa-solid fa-xmark" title="Delete"></i>'
+    document.getElementById('toDoListContainer').appendChild(listOption)
 }

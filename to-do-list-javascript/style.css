@@ -92,6 +92,7 @@ table{
 }
 tr , th , td{
     border: solid 2px #004050;
+    width: 500px;
 }
 th , td{
     padding: 2%;
