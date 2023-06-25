@@ -10,21 +10,18 @@
 </head>
 <body>
     <section class="container">
-        <div class="form-container">
+        <form class="form-container" id="myForm">
             <h1>To Do List</h1>
             <input type="text" id="toDoListName" class="input-text" placeholder="Add To Do List Name" required>
             <textarea id="toDoListDescription" placeholder="Add To Do List Description" required></textarea>
-            <button class="button-submit" onclick="submit()">Submit</button>
-        </div>
+            <button type="submit" class="button-submit">Submit</button>
+        </form>
         <div class="list-container">
-            <table>
+            <table id="tableContainer">
                 <tr>
                     <th>Name</th>
                     <th>Description</th>
                     <th>Options</th>
-                </tr>
-                <tr id="toDoListContainer">
-                    
                 </tr>
             </table>
         </div>

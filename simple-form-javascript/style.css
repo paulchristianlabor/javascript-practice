@@ -46,18 +46,17 @@ input::placeholder{
 .gender-container{
     width: 30%;
     height: 50px;
-    padding: 2%;
+    padding-right: 2%;
     margin-bottom: 10px;
     border-radius: 10px;
     border: solid 1px #004050;
     background-color: white;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    min-width: 100px;
 }
 label{
-    margin-left: 10px;
-}
-.input-sex{
     margin-left: 10px;
 }
 .input-date{

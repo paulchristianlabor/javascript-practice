@@ -98,6 +98,11 @@ th , td{
     padding: 2%;
     min-width: 70px;
 }
+.options-button{
+    margin: 2px;
+    background-color: #fff;
+    border: none;
+}
 .fa-solid{
     padding: 5px;
     border-radius: 5px;
