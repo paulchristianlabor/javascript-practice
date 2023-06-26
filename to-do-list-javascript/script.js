@@ -72,7 +72,6 @@ function submit(event){
     todoList.push(todoItem)
     console.log("todo list update: ", todoList)
 }
-
 function markAsDone(){
     // if 
 }
