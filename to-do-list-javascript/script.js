@@ -12,13 +12,16 @@ function submit(event){
 
     let toDoListName = document.getElementById('toDoListName').value
     let toDoListDescription = document.getElementById('toDoListDescription').value
+
     const id = todoList.length + 1 
     const todoItem = {
         id: id,
         name: toDoListName,
         description: toDoListName
     }
+
     console.log(todoItem)
+    
     let listTr = document.createElement("tr")
     
     let nameTd = document.createElement("td")
