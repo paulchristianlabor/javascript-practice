@@ -19,8 +19,6 @@ function submit(event){
         name: toDoListName,
         description: toDoListName
     }
-
-    console.log(todoItem)
     
     let listTr = document.createElement("tr")
     
